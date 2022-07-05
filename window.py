@@ -88,7 +88,6 @@ class Ui_password(object):
     def make_password(self):
         password = password_maker(self.upper.isChecked(), self.lower.isChecked(), self.number.isChecked(), self.symbol.isChecked(), int(self.spinBox.value()))
         self.password_lineedit.setText(password)
-        print(self.spinBox.value())
 
 
     def retranslateUi(self, password):
